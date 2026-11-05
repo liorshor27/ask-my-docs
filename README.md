@@ -48,11 +48,7 @@ python 01_chroma_playground.py
 - [ ] Answer generation with an LLM
 - [ ] REST API with FastAPI
 - [ ] Tests & documentation
-
+ 
 ## What I Learned
-
-✍️ 
-## What I Learned
-
 - **Semantic search finds meaning, not keywords:** I asked *"Is there a recipe for banana muffin?"* and the top result was *"I made a chocolate-flavored cake"*, even though the two sentences share no words. The embedding model placed them close together in vector space because both are about sweet baked goods.
 - **`add` vs. `upsert`:** Running `add` again with existing IDs didn't raise an error, it silently ignored them (`count()` stayed at 6). This means updated documents would keep their old content. `upsert` solves this by inserting new IDs and updating existing ones.
